@@ -1,0 +1,70 @@
+.list{
+    width: 80%;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.list__screen {
+    list-style: none;
+}
+
+.list__link {
+    margin: 2rem 0;
+    display: block;
+    border: 1px solid #037aff;
+    padding: 1rem 2rem;
+    transition: .2s all ease-out;
+    overflow: auto;
+}
+
+.list__link:hover {
+    color: #ffffff;
+    border: none;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+}
+
+.list--loading {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.heading__list {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+    line-height: 1.618em;
+    text-align: center;
+}
+
+/*Phone-Portrait*/
+
+@media only screen and (max-width: 599px) {
+    .list, .list--loading {
+        width: 100%;
+    }    
+}
+  
+  /*Tablet-Portrait*/
+  
+  @media only screen and (min-width: 600px) and (max-width: 900px) and (min-height: 600px) {
+    .list, .list--loading {
+        width: 80%;
+    } 
+  }
+  
+  /*Phone-Landscape*/
+  
+  @media only screen and (min-width: 500px) and (max-width: 900px) and (max-height: 600px) {
+    .list, .list--loading {
+        width: 100%;
+    } 
+  }
+  
+  /* Tablet-Landscape*/
+  
+  @media only screen and (min-width: 900px) and (max-width: 1200px) and (max-height: 900px) {
+    .list, .list--loading {
+        width: 75%;
+    } 
+  }

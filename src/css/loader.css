@@ -1,0 +1,68 @@
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: .5rem;
+    width: .9rem;
+    background: #ff8803;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: .5rem;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 2.7rem;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 4.9rem;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: .5rem;
+      height: 5.9rem;
+    }
+    50%, 100% {
+      top: 1.9rem;
+      height: 2.7rem;
+    }
+  }
+  
+  .lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 2.6rem solid #ff8803;
+    border-color: #ff8803 transparent #ff8803 transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }

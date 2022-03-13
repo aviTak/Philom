@@ -1,0 +1,75 @@
+.upload {
+    text-align: center;
+}
+
+.upload--input {
+    width: 60%;
+    margin-top: 1rem;
+    padding: 1.6rem 2rem;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 1px solid #323232;
+    background-color: #f6f6f6;
+}
+
+.upload--input:focus {
+    border: 1px solid #037aff;
+}
+
+.label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.upload--error {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.upload--loading {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Phone-Portrait*/
+
+@media only screen and (max-width: 599px) {
+    .upload--input, .upload--error, .upload--loading, .label {
+        width: 100%;
+    }    
+}
+  
+  /*Tablet-Portrait*/
+  
+  @media only screen and (min-width: 600px) and (max-width: 900px) and (min-height: 600px) {
+    .upload--input, .upload--error, .upload--loading, .label {
+        width: 80%;
+    } 
+  }
+  
+  /*Phone-Landscape*/
+  
+  @media only screen and (min-width: 500px) and (max-width: 900px) and (max-height: 600px) {
+    .upload--input, .upload--error, .upload--loading, .label {
+        width: 100%;
+    } 
+  }
+  
+  /* Tablet-Landscape*/
+  
+  @media only screen and (min-width: 900px) and (max-width: 1200px) and (max-height: 900px) {
+    .upload--input, .upload--error, .upload--loading, .label {
+        width: 75%;
+    } 
+  }

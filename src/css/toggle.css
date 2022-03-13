@@ -1,0 +1,13 @@
+.toggle {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.618em;
+}
+
+.video {
+    padding: .5rem 1rem;
+    transition: all .1s ease-out; 
+    clip-path: polygon(12% 0, 100% 0, 88% 100%, 0% 100%);
+}
